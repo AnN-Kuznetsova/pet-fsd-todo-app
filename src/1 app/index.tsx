@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./index.css";
+import "./index.scss";
 
 
-export const App = (): JSX.Element => {
+export const App: React.FC = (): JSX.Element => {
   return (
     <div className="App">
       <header className="App-header">
