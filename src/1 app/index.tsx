@@ -1,9 +1,10 @@
 import React from "react";
 
 import "./index.scss";
+import { withProviders } from "./providers";
 
 
-export const App: React.FC = (): JSX.Element => {
+const AppComponent: React.FC = (): JSX.Element => {
   return (
     <div className="App">
       <header className="App-header">
@@ -22,3 +23,6 @@ export const App: React.FC = (): JSX.Element => {
     </div>
   );
 };
+
+
+export const App = withProviders(AppComponent);
