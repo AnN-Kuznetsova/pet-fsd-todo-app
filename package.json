@@ -19,7 +19,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "eslint": "eslint --ext .jsx,.js src/",
+    "eslint:fix": "eslint --fix --ext .jsx,.js src/",
+    "test": "npm run eslint && react-scripts test --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-react": "7.33.2"
   }
 }
